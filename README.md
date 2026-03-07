@@ -1,11 +1,99 @@
-# React + TypeScript + Vite
+# Portfolio Website Builder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains a modern developer portfolio built with React, TypeScript, Vite, TailwindCSS, and Framer Motion. It replicates a clean, card-based layout inspired by a Gamma.site portfolio and includes sections for hero, about, skills, projects, experience, blog, and contact.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Dark theme with gradient highlights and glassmorphism cards
+- Smooth scrolling navigation
+- Animated skill bars and section transitions
+- Project filtering by category
+- SEO meta tags and Lighthouse optimization
+- Responsive, mobile-first design
+
+## Tech Stack
+
+- **Frontend:** React + TypeScript + Vite
+- **Styling:** TailwindCSS
+- **Animations:** Framer Motion
+- **Icons:** Lucide React
+- **Routing:** React Router DOM
+- **Utilities:** react-scroll for smooth scrolling
+
+## Folder Structure
+
+```
+src/
+  components/   # reusable components (Navbar, etc.)
+  sections/     # page sections (Hero, About, Skills, etc.)
+  pages/        # top-level pages (HomePage)
+  assets/       # images, icons, etc.
+  hooks/        # custom React hooks
+  utils/        # helper functions
+```
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 20.19+ or 22.12+ (upgrade if necessary). The project may warn if you are on an unsupported minor version.
+- npm
+
+### Installation
+
+```bash
+# clone repository
+git clone <repo-url>
+cd MyProtfolio
+
+# install dependencies
+npm install
+
+# start development server
+npm run dev
+```
+
+The app will be available at `http://localhost:5173` (or next available port).
+
+### Building for Production
+
+```bash
+npm run build
+```
+
+### Deployment
+
+1. Push the repository to GitHub:
+   ```bash
+git remote add origin <your-github-repo-url>
+git push -u origin main
+```
+
+2. Deploy to Vercel:
+   - Connect your GitHub repository in the Vercel dashboard
+   - Vercel will automatically detect the Vite project and configure build settings
+   - Alternatively, run:
+     ```bash
+     npm install -g vercel
+     vercel --prod
+     ```
+
+Your site will be published, and you will receive a live URL (e.g., `https://myprotfolio.vercel.app`).
+
+### Environment Variables
+
+No special environment variables are required for this static portfolio. If you add any APIs or third-party keys, configure them in Vercel or Netlify settings.
+
+## Next Steps
+
+- Replace placeholder data (projects, links, contact info) with your real content
+- Add more blog posts or integrate a CMS
+- Improve accessibility and SEO further
+- Optimize images and assets
+
+---
+
+Thanks for using this portfolio template! Feel free to modify and extend it to showcase your work.
 
 ## React Compiler
 
